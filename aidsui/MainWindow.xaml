@@ -1,0 +1,116 @@
+﻿<Window x:Class="aidsui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:aidsui"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="874"
+        WindowStyle="None"
+        ResizeMode="NoResize">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="0" HorizontalAlignment="Center" Height="48" VerticalAlignment="Top" Width="874" Background="Red"
+                MouseLeftButtonDown="Border_MouseLeftButtonDown">
+            <Grid>
+                <Label Content="AiDz Menu" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" FontFamily="Cascadia Code">
+                </Label>
+                <Label Content="X" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" FontFamily="Cascadia Code" Margin="830,0,0,0"
+                       MouseLeftButtonDown="Label_MouseLeftButtonDown">
+                </Label>
+                <Label Content="-" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" FontFamily="Cascadia Code" Margin="794,0,0,0"
+                       MouseLeftButtonDown="Label_MouseLeftButtonDown_1" RenderTransformOrigin="0.516,0.583">
+                </Label>
+            </Grid>
+        </Border>
+        <TextBox 
+            Name="scriptbox"
+            AcceptsTab="True"
+            AcceptsReturn="True"
+            BorderThickness="0"
+            Background="Aqua"
+            HorizontalAlignment="Left" Height="652" Margin="0,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="437" Text="Enter code here" FontFamily="Cascadia Code"/>
+
+        <TextBox
+            Name="logs"
+            IsReadOnly="True"
+            BorderThickness="0"
+            Background="Aqua"
+            HorizontalAlignment="Left" Height="350" Margin="436,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="438"
+            Text="Logs appear here&#x0a;Thanks for using the first ever BrickPlanet exploit!&#x0a;" FontFamily="Cascadia Code"/>
+        <Button 
+            BorderBrush="Transparent"
+            BorderThickness="0"
+            Background="Bisque"
+            SnapsToDevicePixels="True"
+            UseLayoutRounding="True"
+            Content="Attach" HorizontalAlignment="Left" Height="36" Margin="442,53,0,0" VerticalAlignment="Top" Width="141" FontFamily="Cascadia Code" FontWeight="Bold" FontSize="16" Click="Button_Click_2"/>
+        <Button 
+            Click="Button_Click"
+            BorderBrush="Transparent"
+            BorderThickness="0"
+            Background="HotPink"
+            SnapsToDevicePixels="True"
+            UseLayoutRounding="True"
+            Content="Execute Plain" HorizontalAlignment="Left" Height="36" Margin="442,94,0,0" VerticalAlignment="Top" Width="141" FontFamily="Cascadia Code" FontWeight="Bold" FontSize="16"/>
+        <Button 
+            BorderBrush="Transparent"
+            BorderThickness="0"
+            Background="Gold"
+            SnapsToDevicePixels="True"
+            UseLayoutRounding="True"
+            Content="Execute Supervisor" HorizontalAlignment="Left" Height="36" Margin="442,135,0,0" VerticalAlignment="Top" Width="141" FontFamily="Cascadia Code" FontWeight="Bold" FontSize="12"/>
+        <Button 
+            BorderBrush="Transparent"
+            BorderThickness="0"
+            Background="Bisque"
+            SnapsToDevicePixels="True"
+            UseLayoutRounding="True"
+            Content="Debug Console" HorizontalAlignment="Left" Height="36" Margin="442,176,0,0" VerticalAlignment="Top" Width="141" FontFamily="Cascadia Code" FontWeight="Bold" FontSize="16"/>
+        <Button 
+            BorderBrush="Transparent"
+            BorderThickness="0"
+            Background="Bisque"
+            SnapsToDevicePixels="True"
+            UseLayoutRounding="True"
+            Content="Redirect output" HorizontalAlignment="Left" Height="36" Margin="442,217,0,0" VerticalAlignment="Top" Width="141" FontFamily="Cascadia Code" FontWeight="Bold" FontSize="14"/>
+        <Button 
+            BorderBrush="Transparent"
+            BorderThickness="0"
+            Background="Bisque"
+            SnapsToDevicePixels="True"
+            UseLayoutRounding="True"
+            Content="Chat Logger" HorizontalAlignment="Left" Height="36" Margin="442,258,0,0" VerticalAlignment="Top" Width="141" FontFamily="Cascadia Code" FontWeight="Bold" FontSize="17"/>
+        <Button 
+            BorderBrush="Transparent"
+            BorderThickness="0"
+            Background="Bisque"
+            SnapsToDevicePixels="True"
+            UseLayoutRounding="True"
+            Content="Anti-AFK" HorizontalAlignment="Left" Height="36" Margin="442,299,0,0" VerticalAlignment="Top" Width="141" FontFamily="Cascadia Code" FontWeight="Bold" FontSize="17"/>
+        <Button 
+            BorderBrush="Transparent"
+            BorderThickness="0"
+            Background="Bisque"
+            SnapsToDevicePixels="True"
+            UseLayoutRounding="True"
+            Content="Net Logger" HorizontalAlignment="Left" Height="36" Margin="588,258,0,0" VerticalAlignment="Top" Width="141" FontFamily="Cascadia Code" FontWeight="Bold" FontSize="17"/>
+        <Button 
+            Name="TMToggle"
+            BorderBrush="Transparent"
+            BorderThickness="0"
+            Background="Red"
+            SnapsToDevicePixels="True"
+            UseLayoutRounding="True"
+            MouseLeftButtonDown="TMToggleClick"
+            Content="Toggle TM" HorizontalAlignment="Left" Height="36" Margin="588,299,0,0" VerticalAlignment="Top" Width="141" FontFamily="Cascadia Code" FontWeight="Bold" FontSize="17"/>
+        <Button 
+            Click="Button_Click_1"
+            BorderBrush="Transparent"
+            BorderThickness="0"
+            Background="Bisque"
+            SnapsToDevicePixels="True"
+            UseLayoutRounding="True"
+            Content="Clear Logs" HorizontalAlignment="Left" Height="36" Margin="588,217,0,0" VerticalAlignment="Top" Width="141" FontFamily="Cascadia Code" FontWeight="Bold" FontSize="17"/>
+
+    </Grid>
+</Window>
